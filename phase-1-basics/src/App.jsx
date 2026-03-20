@@ -1,10 +1,9 @@
-import React from 'react'
-import Counter from './day-02-state/Counter'
+import ProductList from "./day-03-lists/ProductList"
 function App() {
   
   return (
     <div>
-      <Counter/>
+      <ProductList/>
     </div>
   )
 }

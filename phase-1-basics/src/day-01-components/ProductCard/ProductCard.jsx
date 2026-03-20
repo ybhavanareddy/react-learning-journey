@@ -1,5 +1,4 @@
-import React from 'react'
-
+/*
 function ProductCard({product}) {
   return (
     <div>
@@ -10,5 +9,20 @@ function ProductCard({product}) {
     </div>
   )
 }
+
+export default ProductCard
+*/
+
+import React from 'react'
+
+function ProductCard({title,price}) {
+  return (
+    <div>
+        <h1>{title}</h1>
+        <p>{price}</p>
+    </div>
+  )
+}
+
 
 export default ProductCard
