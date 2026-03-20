@@ -13,7 +13,7 @@ function ProductList() {
   return (
     <div>
         {filteredProducts.map((product) => (
-            <ProductCard  key={product.id} title={product.title} price = {product.price}/>
+            <ProductCard  key={product.id} product={product}/>
         ))}
         
     </div>
