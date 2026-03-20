@@ -1,5 +1,5 @@
-import ProductCard from "./components/ProductCard";
-
+import ProductCard from "./components/ProductCard/ProductCard";
+import './App.css'
 function App(){
 
   const product = {
@@ -10,7 +10,7 @@ function App(){
   };
 
   return (
-    <div>
+    <div className="bg-container">
       <ProductCard product={product}/>
     </div>
     
