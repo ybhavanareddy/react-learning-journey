@@ -18,7 +18,7 @@ function Login() {
             setError("Please fill all fields");
             return;
         }
-        setError("")
+        setError("");
         setIsLoggedIn(true);
         
     }
