@@ -1,9 +1,9 @@
-import ToggleMessage from "./day-05-conditionalRendering/ToggleMessage"
+import Parent from "./day-06-lifting-state/Parent"
 function App() {
   
   return (
     <div>
-      <ToggleMessage />
+      <Parent />
     </div>
   )
 }
