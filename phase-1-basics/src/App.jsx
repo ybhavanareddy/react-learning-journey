@@ -1,9 +1,10 @@
-import Parent from "./day-06-lifting-state/Parent"
+
+import Users from "./day-07-useEffect/Users"
 function App() {
   
   return (
     <div>
-      <Parent />
+      <Users />
     </div>
   )
 }
