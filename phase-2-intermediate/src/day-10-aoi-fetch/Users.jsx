@@ -6,6 +6,8 @@ function Users() {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState("");
 
+    const[search, setSearch] = useState("");
+
     useEffect( () =>{
         async function fetchData(){
             try{
@@ -31,21 +33,36 @@ function Users() {
         
     },[])
 
-    
+    const filteredNames = users.filter(user => 
+        user.name.toLowerCase().includes(search.toLowerCase())
+    )
+
+
+    if (isLoading) return <p>Loading ...</p>
+    if (error) return <p>{error}</p>
 
   return (
     <>
-        {isLoading 
-        ? <p>Loading...</p>
-        : <ul>{users.map((user)=>
+
+        <input
+         type="text"
+         placeholder='Search Users..'
+         value={search}
+         onChange={(e)=>setSearch(e.target.value)}
+         />
+
+        
+         <ul>{filteredNames.map((user)=>
             <li key={user.id}>
             <h3>{user.name}</h3>
             <p>{user.email}</p>
             </li>
         )}</ul>
+
+        {filteredNames.length === 0 && <p>No Users Found</p>}
         
-    }
-    {error && <p>{error}</p>}
+    
+    
         
 
     </>
