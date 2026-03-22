@@ -1,0 +1,20 @@
+.todos-Container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    min-height:100vh;
+}
+.input-field{
+    padding:10px;
+    
+}
+.input-field input{
+    margin-right:10px;
+    height:30px;
+    border-radius:10px;
+}
+.input-field button{
+    
+    height:30px;
+    border-radius:10px;
+}

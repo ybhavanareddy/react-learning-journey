@@ -1,10 +1,10 @@
 
-import Users from "./day-07-useEffect/Users"
+import TodoApp from "./day-08-mini-project/TodoApp"
 function App() {
   
   return (
     <div>
-      <Users />
+      <TodoApp />
     </div>
   )
 }
